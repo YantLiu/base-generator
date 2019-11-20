@@ -1,0 +1,17 @@
+package ${package}.dao;
+
+import ${package}.entity.${className};
+import ${package}.mapper.${className}Mapper;
+import com.newrun.xiruo.xframework.dao.tk.BaseTkDao;
+import org.springframework.stereotype.Component;
+
+/**
+ * ${comments}
+ *
+ * @author ${author}
+ * @email ${email}
+ * @date ${datetime}
+ */
+@Component
+public class ${className}Dao extends BaseTkDao<${className}Mapper,${className}> {
+}

@@ -1,2 +1,1 @@
-# base-generator
-代码生成器
+#代码生成器
