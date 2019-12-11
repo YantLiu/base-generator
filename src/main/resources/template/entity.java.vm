@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.alibaba.fastjson.JSON;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import io.swagger.annotations.ApiModelProperty;
@@ -24,6 +25,7 @@ import java.math.BigDecimal;
 @Table(name = "${tableName}")
 @Data
 @Builder
+@NoArgsConstructor
 public class ${className} implements Serializable {
 	private static final long serialVersionUID = 1L;
 
