@@ -180,26 +180,29 @@ public class GeneratorUtils {
         if (template.contains("index.js.vm")) {
             return frontPath + "api" + File.separator + moduleName + File.separator + toLowerCaseFirstOne(className) + File.separator + "index.js";
         }
-
         if (template.contains("index.vue.vm")) {
             return frontPath + "views" + File.separator + moduleName + File.separator + toLowerCaseFirstOne(className) + File.separator + "index.vue";
         }
 
-        if (template.contains("biz.java.vm")) {
-            return packagePath + "biz" + File.separator + className + "Biz.java";
-        }
-        if (template.contains("dao.java.vm")) {
-            return packagePath + "dao" + File.separator + className + "Dao.java";
+        if (template.contains("entity.java.vm")) {
+            return packagePath + "entity" + File.separator + className + ".java";
         }
         if (template.contains("mapper.java.vm")) {
             return packagePath + "mapper" + File.separator + className + "Mapper.java";
         }
-        if (template.contains("entity.java.vm")) {
-            return packagePath + "entity" + File.separator + className + ".java";
+        if (template.contains("dao.java.vm")) {
+            return packagePath + "dao" + File.separator + className + "Dao.java";
+        }
+        if (template.contains("service.java.vm")) {
+            return packagePath + "service" + File.separator + className + "Service.java";
+        }
+        if (template.contains("biz.java.vm")) {
+            return packagePath + "biz" + File.separator + className + "Biz.java";
         }
         if (template.contains("controller.java.vm")) {
             return packagePath + "rest" + File.separator + className + "Controller.java";
         }
+
         if (template.contains("mapper.xml.vm")) {
             return "main" + File.separator + "resources" + File.separator + "mapper" + File.separator + className + "Mapper.xml";
         }
