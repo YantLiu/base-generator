@@ -38,8 +38,9 @@ public class GeneratorUtils {
         //templates.add("template/index.js.vm");
         //templates.add("template/index.vue.vm");
         templates.add("template/mapper.xml.vm");
+        //templates.add("template/dao.java.vm");
         //templates.add("template/biz.java.vm");
-        templates.add("template/dao.java.vm");
+        templates.add("template/service.java.vm");
         templates.add("template/entity.java.vm");
         templates.add("template/mapper.java.vm");
         //templates.add("template/controller.java.vm");
