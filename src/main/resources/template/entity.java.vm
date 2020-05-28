@@ -26,8 +26,6 @@ import java.math.BigDecimal;
 @Table(name = "${tableName}")
 @Data
 @Builder
-@AllArgsConstructor
-@NoArgsConstructor
 public class ${className} implements Serializable {
 	private static final long serialVersionUID = 1L;
 
