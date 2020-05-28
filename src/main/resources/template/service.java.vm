@@ -4,7 +4,7 @@ import org.springframework.stereotype.Service;
 
 import ${package}.entity.${className};
 import ${package}.mapper.${className}Mapper;
-import com.newrun.xiruo.xframework.service.BaseTkService;
+import com.sf.app.service.BaseTkService;
 
 /**
  * ${comments}
