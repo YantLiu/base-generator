@@ -10,9 +10,15 @@ spring:
     datasource:
         type: com.alibaba.druid.pool.DruidDataSource
         driver-class-name: com.mysql.jdbc.Driver
-        url: jdbc:mysql://rm-wz906gbl9sx24ndy6do.mysql.rds.aliyuncs.com:3306/dev_iot_card?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
+        ###纽润外网
+        url: jdbc:mysql://rm-wz906gbl9sx24ndy6do.mysql.rds.aliyuncs.com:3306/dev_sd?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
         username: root
         password: etc@123!
+
+        ###盛海内网
+        #url: jdbc:mysql://192.168.31.193:3306/pbans?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true
+        #username: shnett
+        #password: shnett001
     jackson:
         time-zone: GMT+8
         date-format: yyyy-MM-dd HH:mm:ss
